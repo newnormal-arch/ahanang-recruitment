@@ -607,16 +607,17 @@ i{
   width: 100%;
   border: none;
   font-size: 16px;
+  font-family: var(--ff-poppins);
   background: var(--platinum);
   border-radius: 6px;
-  padding: 0 15px;
+  padding: 12px 15px;
   resize: none;
 }
 
 .message-box{
-  min-height: 110px;
-  
+  min-height: 110px;  
 }
+
 .button{
   display: inline-block;
   margin-top: 12px;
