@@ -525,6 +525,10 @@ body {
 
 .features-card .title { margin-block-end: 10px; }
 
+.features-card .text{margin-bottom: 20px;}
+
+.features-card li{ font-weight: 600;}
+
 .features-banner { margin-block: 40px; }
 
 .features-banner > img {
