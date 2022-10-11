@@ -536,6 +536,27 @@ body {
   margin-inline: auto;
 }
 
+.service_list{
+  display: grid;
+  grid-template-columns: auto 5fr;
+}
+
+.service_icons {
+  height: auto;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.service_icons img{
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.service_text{
+  font-size: var(--fs-8);
+  text-align: center;
+}
+
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
