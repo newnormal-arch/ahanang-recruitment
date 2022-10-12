@@ -229,6 +229,26 @@ body {
   object-fit: cover;
 }
 
+.whatsapp{
+  position: fixed;
+  right: 15px;
+  top: 80%;
+}
+
+.whatsapp h5{
+  color: var(--white);
+  background: #20B20F;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.whatsapp .floating-icon{
+  height: 30px;
+  width: 30px;
+}
+
 
 
 
