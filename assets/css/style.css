@@ -578,6 +578,88 @@ body {
 }
 
 /*-----------------------------------*\
+  #STATS
+\*-----------------------------------*/
+.stats{
+  margin: 100px 0;
+}
+.wrapper {
+  position: absolute;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.statscontainer {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
+  font-size: 16px;
+  border-radius: 0.5em;
+  background-color: var(--st-patricks-blue);
+  border-bottom: 10px solid var(--logo-green);
+}
+span.num {
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+span.text {
+  color: #e0e0e0;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 85vw;
+  }
+  .statscontainer {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .statscontainer {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .stats{
+    margin: 150px 0;
+  }
+  .wrapper {
+    gap: 15px;
+  }
+  .statscontainer {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+}
+
+
+
+
+/*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
 
@@ -978,10 +1060,6 @@ i{
 
 }
 
-
-
-
-
 /**
  * responsive for larger than 768px screen
  */
@@ -993,8 +1071,6 @@ i{
    */
 
   .container { max-width: 720px; }
-
-
 
   /**
    * HERO
@@ -1015,15 +1091,11 @@ i{
     gap: 30px;
   }
 
-
-
   /**
    * SERVICE
    */
 
   .service-list { grid-template-columns: 1fr 1fr; }
-
-
 
   /**
    * FEATURES
@@ -1037,19 +1109,12 @@ i{
     gap: 25px;
   }
 
-
-
   /**
    * FOOTER
-   */
+  */
 
   .footer-top .container { grid-template-columns: repeat(3, 1fr); }
-
 }
-
-
-
-
 
 /**
  * responsive for larger than 992px screen
@@ -1071,15 +1136,11 @@ i{
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
 
   .container { max-width: 950px; }
-
-
 
   /**
    * HEADER
@@ -1108,15 +1169,11 @@ i{
 
   .navbar-link { color: var(--color); }
 
-
-
   /**
    * HERO
    */
 
   .hero { min-height: 700px; }
-
-
 
   /**
    * ABOUT
@@ -1128,15 +1185,11 @@ i{
     gap: 30px;
   }
 
-
-
   /**
    * SERVICE
    */
 
   .service-list { grid-template-columns: repeat(3, 1fr); }
-
-
 
   /**
    * FEATURES
@@ -1167,12 +1220,7 @@ i{
   .footer-brand { grid-column: 1 / 5; }
 
   .footer-brand .text { max-width: 45ch; }
-
 }
-
-
-
-
 
 /**
  * responsive for larger than 1200px screen
@@ -1188,15 +1236,11 @@ i{
 
   .section-title { --fs-3: 4.6rem; }
 
-
-
   /**
    * HERO
    */
 
   .hero { min-height: 800px; }
-
-
 
   /**
    * BLOG
@@ -1212,8 +1256,6 @@ i{
     justify-content: space-between;
   }
 
-
-
   /**
    * FOOTER
    */
@@ -1221,5 +1263,5 @@ i{
   .footer-top .container { grid-template-columns: 1fr 0.5fr 0.7fr 0.5fr 1fr; }
 
   .footer-brand { grid-column: auto; }
-
+   
 }
